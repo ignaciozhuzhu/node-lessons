@@ -19,7 +19,6 @@ app.get('/', function(req, res, next) {
       // 剩下就都是 jquery 的内容了
       var $ = cheerio.load(sres.text);
       var items = [];
-      var aaa = [];
       var count = 0;
       $('#topic_list .topic_title').each(function(idx, element) {
         var $element = $(element);
